@@ -3,7 +3,7 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: e19-4yp-project-template
+repository-name: Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
 title:Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
 ---
 
