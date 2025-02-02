@@ -3,7 +3,7 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
+repository-name: e19-4yp-Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
 title: Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
 ---
 
@@ -68,8 +68,8 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 [//]: # ( NOTE: EDIT THIS LINKS WITH YOUR REPO DETAILS )
 
-- [Project Repository](https://github.com/cepdnaclk/Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation)
-- [Project Page](https://cepdnaclk.github.io/Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation)
+- [Project Repository](https://github.com/cepdnaclk/e19-4yp-Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation)
+- [Project Page](https://cepdnaclk.github.io/e19-4yp-Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
