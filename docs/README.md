@@ -4,7 +4,7 @@ permalink: index.html
 
 # Please update this with your repository name and title
 repository-name: Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
-title:Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
+title: Active-bionic-antennas-for-object-detection-and-3D-localization-with-ego-motion-cancellation
 ---
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
