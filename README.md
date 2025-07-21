@@ -18,7 +18,6 @@ This project presents a bio-inspired tactile sensing system for robotic navigati
 
 - Echo State Networks (ESNs) for ego-motion cancellation  
 - Multi-contact bionic antennas for tactile object detection  
-- Google Cartographer SLAM adapted for tactile input  
 
 The result is a robust 3D localization framework suitable for unstructured, cluttered, or visually degraded environments such as disaster zones, underwater habitats, or extraterrestrial exploration.
 
@@ -26,8 +25,7 @@ The result is a robust 3D localization framework suitable for unstructured, clut
 
 ## 🚀 Key Features
 
-- 🧠 Self-sensing cancellation using ESNs  
-- 🗺️ Tactile-based 3D SLAM via Google Cartographer  
+- 🧠 Self-sensing cancellation using ESNs   
 - 🤖 Real-time contact detection with motion filtering  
 - 🧩 Modular offline and online processing models  
 
@@ -35,12 +33,14 @@ The result is a robust 3D localization framework suitable for unstructured, clut
 
 ## 🛠️ Hardware Components
 
-- 4WD Omni-directional robot platform  
+- 4WD robot platform  
 - Jetson Nano (Main Processing Unit)  
 - MPU6050 Accelerometers (x2)  
-- MG90 Servo Motors (x4)  
+- MG90 Servo Motors (x2)  
 - Poly-acrylic tubes (antenna support)  
-- 12V Ni-MH Battery Pack  
+- 12V Ni-MH Battery Pack
+- Arduino Uno with Motor controller  
+  
 
 ---
 
@@ -54,11 +54,6 @@ The result is a robust 3D localization framework suitable for unstructured, clut
 | |  - Predict motion    | |
 | |  - Filter contact    | |
 | +---------------------+  |
-| +---------------------+  |
-| | Cartographer SLAM   |  |
-| |  - Tactile mapping   | |
-| |  - Localization      | |
-| +---------------------+  |
 +---------------------------+
         ↑         ↑
   Antenna IMU   Servo Cmds
@@ -68,34 +63,21 @@ The result is a robust 3D localization framework suitable for unstructured, clut
 
 ## 🧪 Methodology
 
-1. **Data Collection**: Acceleration & servo data at 100 Hz  
+1. **Data Collection**: Acceleration & servo data at 130 Hz  
 2. **Offline ESN Training**: Model self-induced antenna motion  
 3. **Online Filtering**: Real-time ego-motion cancellation  
-4. **Tactile SLAM**: Localization and mapping with filtered data  
+ 
 
 ---
 
 ## 🔬 Data Processing
 
-- Kalman Filtering: Smooth IMU data  
 - FFT: Analyze vibration signatures  
-- Low-pass Filtering: Eliminate high-frequency noise  
+- Band-pass Filtering: Eliminate high-frequency noise  
 
 ---
 
-## 💰 Budget Summary
 
-| Component                  | Quantity | Cost (LKR)     |
-|---------------------------|----------|----------------|
-| 4WD Omni Robot Platform   | 1        | 194,000.00     |
-| Jetson Nano               | 1        | 77,500.00      |
-| MPU6050 Accelerometers    | 3        | 2,010.00       |
-| MG90 Servo Motors         | 4        | 2,160.00       |
-| Ni-MH Battery (12V)       | 1        | 4,000.00       |
-| Poly-Acrylic Tubes        | 1        | 1,000.00       |
-| **Total**                 |          | **280,670.00** |
-
----
 
 ## 📚 References
 
