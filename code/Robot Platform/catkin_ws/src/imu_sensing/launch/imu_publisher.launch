@@ -1,0 +1,5 @@
+<launch>
+  <node name="imu_antenna_publisher" pkg="imu_sensing" type="antenna_acc_pub.py" output="screen" />
+  <node name="imu_bottom_publisher" pkg="imu_sensing" type="bottom_acc_pub.py" output="screen" />
+</launch>
+

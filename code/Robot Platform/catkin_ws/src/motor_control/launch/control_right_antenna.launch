@@ -1,0 +1,14 @@
+<launch>
+  <!-- Right-side servo controller -->
+  <node
+    name="servo_controller_right"
+    pkg="motor_control"
+    type="servo_sinusoidal_right.py"
+    output="screen"
+    launch-prefix="python3"
+  >
+    <param name="pan_channel" value="0"/>
+    <param name="tilt_channel" value="1"/>
+  </node>
+</launch>
+

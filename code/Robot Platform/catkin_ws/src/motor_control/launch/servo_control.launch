@@ -1,0 +1,13 @@
+<launch>
+  <!-- Antenna  servo controller -->
+  <node
+    name="searching_antenna"
+    pkg="motor_control"
+    type="sampling_antenna.py"
+    output="screen"
+    launch-prefix="python3"
+  >
+    <param name="pan_channel" value="0"/>
+    <param name="tilt_channel" value="1"/>
+  </node>
+</launch>

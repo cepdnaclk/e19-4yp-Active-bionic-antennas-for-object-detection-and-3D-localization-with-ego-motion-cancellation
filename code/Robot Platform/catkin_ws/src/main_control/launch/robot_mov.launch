@@ -1,0 +1,51 @@
+<launch>
+
+  <!-- Antenna  servo controller -->
+  <node
+    name="searching_antenna"
+    pkg="motor_control"
+    type="searching_antenna.py"
+    output="screen"
+    launch-prefix="python3"
+  >
+    <param name="pan_channel" value="0"/>
+    <param name="tilt_channel" value="1"/>
+  </node>
+
+  <!-- Run the IMU publisher node -->
+  <node name="imu_antenna_publisher" pkg="imu_sensing" type="antenna_acc_pub_new.py" output="screen" />
+  <node name="imu_bottom_publisher" pkg="imu_sensing" type="bottom_acc_pub.py" output="screen" />
+
+  <!-- Launch the data collector node -->
+  <node 
+    name="data_collector" 
+    pkg="main_control" 
+    type="raw_data_collector.py" 
+    output="screen" 
+  />
+
+  <!-- Launch the command sender node (choose sequence 1-4) -->
+  <node 
+    name="command_sender"
+    pkg="main_control"
+    type="command_sender.py"
+    output="screen"
+    launch-prefix="python2"
+  >
+    <param name="sequence" value="4"/>
+    <param name="session_id" value="session_001"/>
+  </node>
+
+  <!-- Launch the base communication node -->
+  <node
+    name="base_communication"
+    pkg="robot_navigation"
+    type="base_communication.py"
+    output="screen"
+    launch-prefix="python2"
+  >
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="115200"/>
+  </node>
+
+</launch>

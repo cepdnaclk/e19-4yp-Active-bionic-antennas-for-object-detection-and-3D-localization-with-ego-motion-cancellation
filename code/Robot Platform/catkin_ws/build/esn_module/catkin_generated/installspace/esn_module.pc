@@ -1,0 +1,8 @@
+prefix=/home/spincoders/catkin_ws/install
+
+Name: esn_module
+Description: Description of esn_module
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

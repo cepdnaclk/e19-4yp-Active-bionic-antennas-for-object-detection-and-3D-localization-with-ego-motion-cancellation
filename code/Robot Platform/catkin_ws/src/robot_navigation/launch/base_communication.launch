@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="robot_navigation" type="base_communication.py" name="base_communication" output="screen">
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="115200"/>
+  </node>
+</launch>

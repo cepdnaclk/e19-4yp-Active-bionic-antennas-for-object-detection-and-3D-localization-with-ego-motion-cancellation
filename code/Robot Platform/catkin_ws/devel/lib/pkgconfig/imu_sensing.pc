@@ -1,0 +1,8 @@
+prefix=/home/spincoders/catkin_ws/devel
+
+Name: imu_sensing
+Description: Description of imu_sensing
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

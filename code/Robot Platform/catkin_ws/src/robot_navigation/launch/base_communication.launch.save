@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="robot_na" type="base_controller.py" name="base_controller" output="screen">
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="115200"/>
+  </node>
+</launch>
